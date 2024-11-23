@@ -18,6 +18,7 @@ const education = [
     location: 'Arlington, Texas',
     period: '08/2023 – Present',
     gradient: 'linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)',
+    gpa: '4.0/4.0'
   },
   {
     degree: 'Bachelor of Technology in Computer Engineering',
@@ -25,6 +26,7 @@ const education = [
     location: 'Gujarat, India',
     period: '07/2017 – 05/2021',
     gradient: 'linear-gradient(135deg, #4158D0 0%, #C850C0 100%)',
+    gpa: '8.97/10.0'
   },
 ];
 
@@ -183,6 +185,18 @@ export default function About() {
                       sx={aboutStyles.infoText}
                     >
                       {edu.period}
+                    </Typography>
+                  </Box>
+
+                  <Box sx={aboutStyles.infoContainer}>
+                    <SchoolIcon 
+                      sx={aboutStyles.icon} 
+                    />
+                    <Typography 
+                      variant="body2" 
+                      sx={aboutStyles.infoText}
+                    >
+                      GPA: {edu.gpa}
                     </Typography>
                   </Box>
                 </Box>

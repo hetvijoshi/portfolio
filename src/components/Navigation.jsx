@@ -95,7 +95,7 @@ export default function Navigation() {
                   color: 'inherit',
                 }}
               >
-                HJ
+                Hetvi Joshi
               </Box>
             </motion.div>
 
