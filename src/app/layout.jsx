@@ -169,11 +169,11 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Favicon */}
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />       
+        <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />       
         {/* Preload critical assets */}
         <link 
           rel="preload" 
-          href="/images/my-profile.jpg" 
+          href="/portfolio/images/my-profile.jpg" 
           as="image"
         />
       </head>
