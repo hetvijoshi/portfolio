@@ -1,13 +1,13 @@
 // This will be a server component by default
 export async function generateMetadata() {
   return {
-    title: 'Hetvi Joshi - Software Engineer',
+    title: 'Hetvi Joshi | Software Engineer | Full Stack Developer',
     description: 'Crafting robust and scalable software solutions with precision and innovation.',
     keywords: 'Hetvi Joshi, Software Engineer, Frontend Developer, Backend Developer, Full Stack Developer, Portfolio',
     openGraph: {
       title: 'Hetvi Joshi - Software Engineer',
       description: 'Crafting robust and scalable software solutions with precision and innovation.',
-      images: ['/images/my-profile.jpg'],
+      images: ['/portfolio/images/my-profile.jpg'],
     },
     alternates: {
       canonical: 'https://hetvijoshi.com',
@@ -25,10 +25,10 @@ export async function generateMetadata() {
       name: 'Hetvi Joshi',
       jobTitle: 'Software Engineer',
       url: 'https://hetvijoshi.com',
-      image: '/images/my-profile.jpg',
+      image: '/portfolio/images/my-profile.jpg',
       sameAs: [
         'https://linkedin.com/in/hetvi-joshi',
-        'https://github.com/yourusername'
+        'https://github.com/hetvijoshi'
       ]
     }
   };

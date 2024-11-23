@@ -176,6 +176,7 @@ export default function RootLayout({ children }) {
           href="/portfolio/images/my-profile.jpg" 
           as="image"
         />
+        <title>Hetvi Joshi | Software Engineer | Full Stack Developer</title>
       </head>
       <body>
         <Box 
