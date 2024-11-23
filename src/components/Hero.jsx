@@ -300,7 +300,7 @@ export default function Hero() {
               }}
             >
               <Image
-                src="/images/my-profile.jpg"
+                src="/portfolio/images/my-profile.jpg"
                 alt="Hetvi Joshi"
                 fill
                 style={{ 
