@@ -16,9 +16,9 @@ const education = [
     degree: 'Master of Science in Computer Science',
     school: 'University of Texas at Arlington',
     location: 'Arlington, Texas',
-    period: '08/2023 – Present',
+    period: '08/2023 – 05/2025',
     gradient: 'linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)',
-    gpa: '4.0/4.0'
+    gpa: '3.88/4.0'
   },
   {
     degree: 'Bachelor of Technology in Computer Engineering',
@@ -26,7 +26,7 @@ const education = [
     location: 'Gujarat, India',
     period: '07/2017 – 05/2021',
     gradient: 'linear-gradient(135deg, #4158D0 0%, #C850C0 100%)',
-    gpa: '8.97/10.0'
+    gpa: '3.56/4.0'
   },
 ];
 
@@ -45,19 +45,19 @@ const skills = [
   },
   {
     category: 'Cloud & DevOps',
-    items: ['AWS', 'Google Cloud', 'Terraform', 'Docker', 'Kubernetes', 'CircleCI', 'GitHub Actions'],
+    items: ['OpenAI API', 'Microsoft Entra ID', 'AWS ', 'Terraform', 'Google Cloud', 'Docker', 'Kubernetes', 'CircleCI', 'Github Actions'],
     icon: <CloudIcon sx={{ fontSize: 40, color: '#EC4899' }} />,
     gradient: 'linear-gradient(135deg, #F43F5E 0%, #EC4899 100%)',
   },
   {
     category: 'Web & Mobile Technologies',
-    items: ['Spring Boot', 'ASP.NET', 'Next.js', 'React', 'React Native', 'Angular'],
+    items: ['Spring Boot', 'ASP.NET', 'ASP.NET Core', 'Node.js', 'Django', 'Next.js', 'React', 'React Native', 'Angular'],
     icon: <WebIcon sx={{ fontSize: 40, color: '#059669' }} />,
     gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
   },
   {
     category: 'Tools',
-    items: ['Jira', 'Confluence', 'Postman', 'Figma'],
+    items: ['Jira', 'Confluence', 'GitLab', 'GitHub', 'Bitbucket', 'Postman', 'Figma', 'Strapi'],
     icon: <BuildIcon sx={{ fontSize: 40, color: '#D97706' }} />,
     gradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
   },
@@ -105,9 +105,9 @@ export default function About() {
           component={motion.p}
           sx={aboutStyles.description}
         >
-          I am a Master&apos;s student in Computer Science at the University of Texas at Arlington, 
-          with a strong foundation in software engineering, cloud computing, and web technologies. 
-          I bring over 2 years of professional experience in delivering scalable, secure solutions 
+          I am a Master&apos;s student in Computer Science at the University of Texas at Arlington,
+          with a strong foundation in software engineering, cloud computing, and web technologies.
+          I bring over 2 years of professional experience in delivering scalable, secure solutions
           across various industries.
         </Typography>
 
@@ -145,19 +145,19 @@ export default function About() {
                 }} />
 
                 <Box sx={{ position: 'relative' }}>
-                  <Typography 
-                    variant="h6" 
+                  <Typography
+                    variant="h6"
                     sx={aboutStyles.degreeTitle}
                   >
                     {edu.degree}
                   </Typography>
 
                   <Box sx={aboutStyles.infoContainer}>
-                    <SchoolIcon 
-                      sx={aboutStyles.icon} 
+                    <SchoolIcon
+                      sx={aboutStyles.icon}
                     />
-                    <Typography 
-                      variant="body1" 
+                    <Typography
+                      variant="body1"
                       sx={aboutStyles.schoolText}
                     >
                       {edu.school}
@@ -165,11 +165,11 @@ export default function About() {
                   </Box>
 
                   <Box sx={aboutStyles.infoContainer}>
-                    <LocationOnIcon 
-                      sx={aboutStyles.icon} 
+                    <LocationOnIcon
+                      sx={aboutStyles.icon}
                     />
-                    <Typography 
-                      variant="body2" 
+                    <Typography
+                      variant="body2"
                       sx={aboutStyles.infoText}
                     >
                       {edu.location}
@@ -177,11 +177,11 @@ export default function About() {
                   </Box>
 
                   <Box sx={aboutStyles.infoContainer}>
-                    <CalendarTodayIcon 
-                      sx={aboutStyles.icon} 
+                    <CalendarTodayIcon
+                      sx={aboutStyles.icon}
                     />
-                    <Typography 
-                      variant="body2" 
+                    <Typography
+                      variant="body2"
                       sx={aboutStyles.infoText}
                     >
                       {edu.period}
@@ -189,11 +189,11 @@ export default function About() {
                   </Box>
 
                   <Box sx={aboutStyles.infoContainer}>
-                    <SchoolIcon 
-                      sx={aboutStyles.icon} 
+                    <SchoolIcon
+                      sx={aboutStyles.icon}
                     />
-                    <Typography 
-                      variant="body2" 
+                    <Typography
+                      variant="body2"
                       sx={aboutStyles.infoText}
                     >
                       GPA: {edu.gpa}

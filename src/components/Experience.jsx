@@ -11,9 +11,11 @@ const experiences = [
     companyUrl: 'https://www.auberginesolutions.com/',
     period: '12/2020 – 07/2023',
     achievements: [
-      'Transitioned a client website to Strapi with React, enhancing UI performance by 30%',
-      'Automated resume filtering with AWS and Node.js, improving efficiency by 65%',
-      'Directed cross-functional teams, boosting project delivery by 15%',
+      'Transitioned a clientʼs website to Strapi with React, enhancing UI performance by 30% and CMS flexibility by 40%.'
+      , 'Architected 10+ client modules with React and Node.js, boosting project efficiency by 25% and cutting development time by 20%.'
+      , 'Automated resume filtering with a Node-based CRON job and AWS, increasing recruitment efficiency by 65% and cutting manual processing by 50%.'
+      , 'Directed 5+ cross-functional teams, accelerating project delivery by 15%.'
+      , 'Mitigated security risks in a Django project, reducing potential financial risks by 30%.'
     ],
   },
 ];
@@ -91,9 +93,9 @@ export default function Experience() {
               },
             }}
           >
-            <Typography 
-              variant="h4" 
-              sx={{ 
+            <Typography
+              variant="h4"
+              sx={{
                 fontWeight: 700,
                 fontSize: { xs: '1.5rem', md: '2rem' },
                 mb: 1,
@@ -114,9 +116,9 @@ export default function Experience() {
                 },
               }}
             >
-              <Typography 
-                variant="h5" 
-                sx={{ 
+              <Typography
+                variant="h5"
+                sx={{
                   fontWeight: 600,
                   fontSize: { xs: '1.2rem', md: '1.5rem' },
                   mb: 2,
@@ -126,9 +128,9 @@ export default function Experience() {
                 {exp.company}
               </Typography>
             </Link>
-            
-            <Box 
-              sx={{ 
+
+            <Box
+              sx={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 background: 'rgba(76, 111, 255, 0.05)',
@@ -139,9 +141,9 @@ export default function Experience() {
               }}
             >
               <WorkIcon sx={{ mr: 1, color: '#4C6FFF' }} />
-              <Typography 
+              <Typography
                 variant="subtitle1"
-                sx={{ 
+                sx={{
                   fontWeight: 500,
                   color: 'text.secondary'
                 }}
@@ -149,14 +151,14 @@ export default function Experience() {
                 {exp.period}
               </Typography>
             </Box>
-            
+
             <Box component="ul" sx={{ m: 0, pl: 3 }}>
               {exp.achievements.map((achievement, i) => (
                 <Typography
                   component="li"
                   key={i}
                   variant="body1"
-                  sx={{ 
+                  sx={{
                     mb: 2,
                     lineHeight: 1.6,
                     '&::marker': {

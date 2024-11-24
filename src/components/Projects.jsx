@@ -10,9 +10,9 @@ import { useTheme } from '@mui/material/styles';
 const projects = [
   {
     title: 'Academiverse',
-    description: '🎓 AI-Powered Learning Platform | 45% Efficiency Boost | Automated Quiz Generation with ChatGPT',
-    technologies: ['OpenAI', 'Spring Boot', 'Next.js', 'AWS RDS', 'Microsoft Entra ID'],
-    githubUrl: 'https://github.com/yourusername/academiverse',
+    description: '🎓 Modern Learning Platform | AI-Powered Quiz Generation with OpenAI | 45% Efficiency Boost',
+    technologies: ['OpenAI', 'Spring Boot', 'Next.js', 'AWS RDS', 'Postgres', 'Microsoft Entra ID'],
+    githubUrl: 'https://github.com/hetvijoshi',
     emoji: '🤖',
     period: '08/2024 – 11/2024'
   },
@@ -20,23 +20,23 @@ const projects = [
     title: 'SpotCrime',
     description: '🚨 Real-time Crime Analytics | 40% Data Accessibility Improvement | Interactive Heat Maps',
     technologies: ['Tableau Public', 'Next.js', 'Node.js', 'AWS RDS', 'Postgres'],
-    githubUrl: 'https://github.com/yourusername/spotcrime',
+    githubUrl: 'https://github.com/hetvijoshi',
     emoji: '🗺️',
     period: '10/2024 – 10/2024'
   },
   {
     title: 'GeoCompensate',
-    description: '📍 Smart Attendance Tracking | 35% Less Admin Work | 100+ Happy Employees',
+    description: '📍 Smart Attendance & Payroll System | 35% Faster Processing | 25% Cost Reduction',
     technologies: ['React Native', 'Node.js', 'MongoDB Atlas', 'Geolocation'],
-    githubUrl: 'https://github.com/yourusername/geocompensate',
+    githubUrl: 'https://github.com/gadarajainik/GeoCompensate',
     emoji: '⏰',
     period: '01/2024 – 03/2024'
   },
   {
     title: 'Dutch N Settle',
-    description: '💰 Split Bills Instantly | Google OAuth | 30% Better Security',
+    description: '💰 Seamless Bill Splitting | Smart Expense Tracking | 30% Enhanced User Security',
     technologies: ['React', 'Node.js', 'MongoDB Atlas', 'Google Cloud', 'GitHub Actions'],
-    githubUrl: 'https://github.com/yourusername/dutch-n-settle',
+    githubUrl: 'https://github.com/gadarajainik/DutchNSettle',
     emoji: '💸',
     period: '08/2023 – 12/2023'
   },
@@ -89,7 +89,7 @@ export default function Projects() {
         >
           Featured Projects
         </Typography>
-        
+
         <Typography
           variant="body1"
           component={motion.p}
@@ -150,9 +150,9 @@ export default function Projects() {
                   <Typography variant="body2" sx={styles.description}>
                     {project.description}
                   </Typography>
-                  <Stack 
-                    direction="row" 
-                    flexWrap="wrap" 
+                  <Stack
+                    direction="row"
+                    flexWrap="wrap"
                     gap={1}
                     sx={styles.techStack}
                   >

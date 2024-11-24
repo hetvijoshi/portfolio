@@ -48,7 +48,7 @@ export default function Contact() {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={containerVariants}
-      sx={{ 
+      sx={{
         py: 8,
         position: 'relative',
         overflow: 'hidden',
@@ -56,11 +56,11 @@ export default function Contact() {
       id="contact"
     >
       {/* Main content container */}
-      <Container 
-        maxWidth="md" 
-        sx={{ 
+      <Container
+        maxWidth="md"
+        sx={{
           position: 'relative',
-          zIndex: 1 
+          zIndex: 1
         }}
       >
         <Typography
@@ -103,14 +103,14 @@ export default function Contact() {
             gap: 3,
           }}
         >
-          <Box 
-            sx={{ 
+          <Box
+            sx={{
               display: 'flex',
               alignItems: 'center',
               gap: 2,
-              background: (theme) => 
-                theme.palette.mode === 'dark' 
-                  ? 'rgba(76, 111, 255, 0.1)' 
+              background: (theme) =>
+                theme.palette.mode === 'dark'
+                  ? 'rgba(76, 111, 255, 0.1)'
                   : 'rgba(76, 111, 255, 0.05)',
               px: 4,
               py: 2,
@@ -121,7 +121,7 @@ export default function Contact() {
             <EmailIcon sx={{ color: '#4C6FFF' }} />
             <Link
               href="mailto:hetvijoshi510@gmail.com"
-              sx={{ 
+              sx={{
                 textDecoration: 'none',
                 color: '#4C6FFF',
                 fontWeight: 500,
@@ -134,14 +134,14 @@ export default function Contact() {
             </Link>
           </Box>
 
-          <Box 
-            sx={{ 
+          <Box
+            sx={{
               display: 'flex',
               alignItems: 'center',
               gap: 2,
-              background: (theme) => 
-                theme.palette.mode === 'dark' 
-                  ? 'rgba(76, 111, 255, 0.1)' 
+              background: (theme) =>
+                theme.palette.mode === 'dark'
+                  ? 'rgba(76, 111, 255, 0.1)'
                   : 'rgba(76, 111, 255, 0.05)',
               px: 4,
               py: 2,
@@ -152,7 +152,7 @@ export default function Contact() {
             <PhoneIcon sx={{ color: '#4C6FFF' }} />
             <Link
               href="tel:+16824054820"
-              sx={{ 
+              sx={{
                 textDecoration: 'none',
                 color: '#4C6FFF',
                 fontWeight: 500,
@@ -165,10 +165,10 @@ export default function Contact() {
             </Link>
           </Box>
 
-          <Stack 
-            direction="row" 
-            spacing={3} 
-            sx={{ 
+          <Stack
+            direction="row"
+            spacing={3}
+            sx={{
               mt: 2,
               '& a': {
                 color: '#4C6FFF',
@@ -180,14 +180,14 @@ export default function Contact() {
             }}
           >
             <Link
-              href="https://linkedin.com/in/[your-profile]"
+              href="https://www.linkedin.com/in/hetvi-joshi"
               target="_blank"
               rel="noopener noreferrer"
             >
               <LinkedInIcon fontSize="large" />
             </Link>
             <Link
-              href="https://github.com/[your-profile]"
+              href="https://github.com/hetvijoshi"
               target="_blank"
               rel="noopener noreferrer"
             >
