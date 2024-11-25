@@ -107,8 +107,14 @@ export default function About() {
         >
           I am a Master&apos;s student in Computer Science at the University of Texas at Arlington,
           with a strong foundation in software engineering, cloud computing, and web technologies.
-          I bring over 2 years of professional experience in delivering scalable, secure solutions
-          across various industries.
+          I bring <Box component="span" sx={{ 
+            backgroundColor: 'rgba(139, 92, 246, 0.15)',
+            padding: '2px 8px',
+            borderRadius: '4px',
+            fontWeight: 600,
+          }}>over 2.5 years of hands-on industry experience</Box> in developing enterprise-level applications, 
+          implementing cloud solutions, and delivering scalable, secure software across various industries. 
+          My expertise spans full-stack development, cloud architecture, and modern development practices.
         </Typography>
 
         <Typography
@@ -194,7 +200,13 @@ export default function About() {
                     />
                     <Typography
                       variant="body2"
-                      sx={aboutStyles.infoText}
+                      sx={{
+                        ...aboutStyles.infoText,
+                        backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                        padding: '2px 8px',
+                        borderRadius: '4px',
+                        fontWeight: 600,
+                      }}
                     >
                       GPA: {edu.gpa}
                     </Typography>
