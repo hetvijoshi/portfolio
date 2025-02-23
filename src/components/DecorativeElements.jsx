@@ -1,10 +1,10 @@
 import { Box } from '@mui/material';
 
 export default function DecorativeElements({ 
-  variant = 'default',  // different variants for different sections
-  primaryColor = 'rgba(76, 111, 255, 0.1)', // default blue
+  variant = 'default',
+  primaryColor = 'rgba(76, 111, 255, 0.1)',
   secondaryColor = 'rgba(76, 111, 255, 0.15)',
-  scale = 1, // to adjust size for different sections
+  scale = 1,
 }) {
   const variants = {
     default: {
@@ -33,7 +33,6 @@ export default function DecorativeElements({
 
   return (
     <>
-      {/* Top Left Group */}
       {currentVariant.topLeft && (
         <Box
           sx={{
@@ -68,7 +67,6 @@ export default function DecorativeElements({
         </Box>
       )}
 
-      {/* Top Right Group */}
       {currentVariant.topRight && (
         <Box
           sx={{
@@ -84,7 +82,6 @@ export default function DecorativeElements({
         />
       )}
 
-      {/* Center Elements */}
       {currentVariant.center && (
         <>
           <Box
@@ -115,7 +112,6 @@ export default function DecorativeElements({
         </>
       )}
 
-      {/* Bottom Left Group */}
       {currentVariant.bottomLeft && (
         <Box
           sx={{
@@ -131,7 +127,6 @@ export default function DecorativeElements({
         />
       )}
 
-      {/* Bottom Right Group */}
       {currentVariant.bottomRight && (
         <Box
           sx={{

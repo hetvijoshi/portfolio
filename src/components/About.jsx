@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import CodeIcon from '@mui/icons-material/Code';
 import StorageIcon from '@mui/icons-material/Storage';
 import CloudIcon from '@mui/icons-material/Cloud';
+import GoogleIcon from '@mui/icons-material/Google';
 import WebIcon from '@mui/icons-material/Web';
 import BuildIcon from '@mui/icons-material/Build';
 import SchoolIcon from '@mui/icons-material/School';
@@ -33,31 +34,42 @@ const education = [
 const skills = [
   {
     category: 'Programming Languages',
-    items: ['C#', 'Java', 'TypeScript', 'JavaScript', 'SQL', 'Python'],
+    items: ['Java', 'Python', 'JavaScript', 'TypeScript', 'C#', 'SQL'],
     icon: <CodeIcon sx={{ fontSize: 40, color: '#8B5CF6' }} />,
     gradient: 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)',
-  },
-  {
-    category: 'Databases',
-    items: ['MS SQL Server', 'Postgres', 'MongoDB', 'MySQL', 'ElasticSearch'],
-    icon: <StorageIcon sx={{ fontSize: 40, color: '#0EA5E9' }} />,
-    gradient: 'linear-gradient(135deg, #14B8A6 0%, #0EA5E9 100%)',
-  },
-  {
-    category: 'Cloud & DevOps',
-    items: ['OpenAI API', 'Microsoft Entra ID', 'AWS ', 'Terraform', 'Google Cloud', 'Docker', 'Kubernetes', 'CircleCI', 'Github Actions'],
-    icon: <CloudIcon sx={{ fontSize: 40, color: '#EC4899' }} />,
-    gradient: 'linear-gradient(135deg, #F43F5E 0%, #EC4899 100%)',
-  },
-  {
-    category: 'Web & Mobile Technologies',
-    items: ['Spring Boot', 'ASP.NET', 'ASP.NET Core', 'Node.js', 'Django', 'Next.js', 'React', 'React Native', 'Angular'],
+  }, {
+    category: 'Web and Mobile Technologies',
+    items: ['Spring Boot', 'Django', '.NET', 'React', 'Redux', 'Next.js', 'Angular', 'React Native', 'Node.js', 'Strapi'],
     icon: <WebIcon sx={{ fontSize: 40, color: '#059669' }} />,
     gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
   },
   {
+    category: 'Databases and Search',
+    items: ['MySQL', 'MongoDB', 'PostgreSQL', 'ElasticSearch', 'MS SQL Server'],
+    icon: <StorageIcon sx={{ fontSize: 40, color: '#0EA5E9' }} />,
+    gradient: 'linear-gradient(135deg, #14B8A6 0%, #0EA5E9 100%)',
+  },
+  {
+    category: 'AWS',
+    items: [ 'Lambda', 'API Gateway', 'RDS', 'S3', 'EC2' ],
+    icon: <CloudIcon sx={{ fontSize: 40, color: '#FF9900' }} />,
+    gradient: 'linear-gradient(135deg, #FF9900 0%, #FF6600 100%)',
+  },
+  {
+    category: 'Google Cloud',
+    items: ['Compute Engine', 'App Engine', 'Pub/Sub', 'Cloud Functions'],
+    icon: <GoogleIcon sx={{ fontSize: 40, color: '#4285F4' }} />,
+    gradient: 'linear-gradient(135deg, #4285F4 0%, #0D47A1 100%)',
+  },
+  {
+    category: 'DevOps',
+    items: [ 'Docker', 'Kubernetes', 'Terraform', 'CircleCI', 'GitHub Actions'],
+    icon: <CloudIcon sx={{ fontSize: 40, color: '#EC4899' }} />,
+    gradient: 'linear-gradient(135deg, #F43F5E 0%, #EC4899 100%)',
+  },
+  {
     category: 'Tools',
-    items: ['Jira', 'Confluence', 'GitLab', 'GitHub', 'Bitbucket', 'Postman', 'Figma', 'Strapi'],
+    items: [ 'Microsoft Entra ID', 'OpenAI API', 'GitHub', 'GitLab', 'Bitbucket', 'Jira', 'Confluence', 'Postman', 'Figma'],
     icon: <BuildIcon sx={{ fontSize: 40, color: '#D97706' }} />,
     gradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
   },
@@ -107,13 +119,13 @@ export default function About() {
         >
           I am a Master&apos;s student in Computer Science at the University of Texas at Arlington,
           with a strong foundation in software engineering, cloud computing, and web technologies.
-          I bring <Box component="span" sx={{ 
+          I bring <Box component="span" sx={{
             backgroundColor: 'rgba(139, 92, 246, 0.15)',
             padding: '2px 8px',
             borderRadius: '4px',
             fontWeight: 600,
-          }}>over 2.5 years of hands-on industry experience</Box> in developing enterprise-level applications, 
-          implementing cloud solutions, and delivering scalable, secure software across various industries. 
+          }}>over 2.5 years of hands-on industry experience</Box> in developing enterprise-level applications,
+          implementing cloud solutions, and delivering scalable, secure software across various industries.
           My expertise spans full-stack development, cloud architecture, and modern development practices.
         </Typography>
 
