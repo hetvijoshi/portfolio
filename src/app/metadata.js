@@ -1,4 +1,3 @@
-// This will be a server component by default
 export async function generateMetadata() {
   return {
     title: 'Hetvi Joshi | Software Engineer | Full Stack Developer',

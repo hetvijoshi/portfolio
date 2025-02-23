@@ -13,7 +13,6 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
-    },
-    // Add other sections
+    }
   ];
 } 

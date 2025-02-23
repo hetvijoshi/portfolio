@@ -11,11 +11,10 @@ const experiences = [
     companyUrl: 'https://www.auberginesolutions.com/',
     period: '12/2020 – 07/2023',
     achievements: [
-      'Transitioned a clientʼs website to Strapi with React, enhancing UI performance by 30% and CMS flexibility by 40%.'
-      , 'Architected 10+ client modules with React and Node.js, boosting project efficiency by 25% and cutting development time by 20%.'
-      , 'Automated resume filtering with a Node-based CRON job and AWS, increasing recruitment efficiency by 65% and cutting manual processing by 50%.'
-      , 'Directed 5+ cross-functional teams, accelerating project delivery by 15%.'
-      , 'Mitigated security risks in a Django project, reducing potential financial risks by 30%.'
+      'Transitioned a client website to Strapi with React, enhancing UI load time by 30% and reducing content publishing time by 40%.'
+      , 'Architected 10+ client modules with React and Node.js, reduced sprint delivery time by 25% through improved module architecture and reusable component strategy.'
+      , 'Automated resume filtering with a Node-based CRON job and AWS Lambda, reducing shortlisting time by 65% and cutting manual document processing by 50%, as validated through recruiter feedback.'
+      , 'Strengthened Django application by implementing Apache server hardening, securing configuration files and HTTP headers, resulting in 30% reduction in security vulnerabilities.'  
     ],
   },
 ];

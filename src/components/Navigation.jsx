@@ -45,7 +45,6 @@ export default function Navigation() {
     }
   };
 
-  // Disable body scroll when mobile menu is open
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = 'hidden';
