@@ -45,13 +45,13 @@ const skills = [
   },
   {
     category: 'Databases and Search',
-    items: ['MySQL', 'MongoDB', 'PostgreSQL', 'ElasticSearch', 'MS SQL Server'],
+    items: ['MySQL', 'MongoDB', 'PostgreSQL', 'Redis', 'ElasticSearch', 'MS SQL Server'],
     icon: <StorageIcon sx={{ fontSize: 40, color: '#0EA5E9' }} />,
     gradient: 'linear-gradient(135deg, #14B8A6 0%, #0EA5E9 100%)',
   },
   {
     category: 'AWS',
-    items: [ 'Lambda', 'API Gateway', 'RDS', 'S3', 'EC2' ],
+    items: [ 'EBS', 'Lambda', 'API Gateway', 'RDS', 'S3', 'EC2' ],
     icon: <CloudIcon sx={{ fontSize: 40, color: '#FF9900' }} />,
     gradient: 'linear-gradient(135deg, #FF9900 0%, #FF6600 100%)',
   },
@@ -69,7 +69,7 @@ const skills = [
   },
   {
     category: 'Tools',
-    items: [ 'Microsoft Entra ID', 'OpenAI API', 'GitHub', 'GitLab', 'Bitbucket', 'Jira', 'Confluence', 'Postman', 'Figma'],
+    items: [ 'Microsoft Entra ID', 'OpenAI API', 'Sonarqube', 'GitHub', 'GitLab', 'Bitbucket', 'Jira', 'Confluence', 'Postman', 'Figma'],
     icon: <BuildIcon sx={{ fontSize: 40, color: '#D97706' }} />,
     gradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
   },

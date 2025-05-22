@@ -12,7 +12,7 @@ const projects = [
     title: 'Academiverse',
     description: '🎓 Modern Learning Platform | AI-Powered Quiz Generation with OpenAI | 50% Efficiency Boost',
     technologies: ['Spring Boot', 'Next.js', 'AWS RDS', 'AWS S3', 'OpenAI API', 'CircleCI', 'Microsoft Entra ID'],
-    githubUrl: 'https://github.com/hetvijoshi',
+    githubUrl: 'https://github.com/hetvijoshi/AcademiVerse',
     emoji: '🤖',
     period: '08/2024 – 11/2024'
   },
@@ -20,7 +20,7 @@ const projects = [
     title: 'SpotCrime',
     description: '🚨 Real-time Crime Analytics | 40% Data Analysis Reduction | Interactive Heat Maps',
     technologies: ['Tableau Public', 'Next.js', 'Node.js', 'AWS RDS', 'Google App Engine'],
-    githubUrl: 'https://github.com/hetvijoshi',
+    githubUrl: 'https://github.com/hetvijoshi/SpotCrime',
     emoji: '🗺️',
     period: '10/2024 – 10/2024'
   },
