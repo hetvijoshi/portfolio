@@ -10,6 +10,7 @@ import BuildIcon from '@mui/icons-material/Build';
 import SchoolIcon from '@mui/icons-material/School';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import { aboutStyles } from './styles/AboutStyles';
 
 const education = [
@@ -37,11 +38,18 @@ const skills = [
     items: ['Java', 'Python', 'JavaScript', 'TypeScript', 'C#', 'SQL'],
     icon: <CodeIcon sx={{ fontSize: 40, color: '#8B5CF6' }} />,
     gradient: 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)',
-  }, {
+  },
+  {
     category: 'Web and Mobile Technologies',
     items: ['Spring Boot', 'Django', '.NET', 'React', 'Redux', 'Next.js', 'Angular', 'React Native', 'Node.js', 'Strapi'],
     icon: <WebIcon sx={{ fontSize: 40, color: '#059669' }} />,
     gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
+  },
+  {
+    category: 'ML/AI',
+    items: ['EBM', 'TensorFlow', 'JAX', 'Transformers', 'Keras', 'Scikit-learn', 'Pandas', 'NumPy'],
+    icon: <PsychologyIcon sx={{ fontSize: 40, color: '#0891B2' }} />,
+    gradient: 'linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)',
   },
   {
     category: 'Databases and Search',
@@ -51,7 +59,7 @@ const skills = [
   },
   {
     category: 'AWS',
-    items: [ 'EBS', 'Lambda', 'API Gateway', 'RDS', 'S3', 'EC2' ],
+    items: ['EBS', 'Lambda', 'API Gateway', 'RDS', 'S3', 'EC2'],
     icon: <CloudIcon sx={{ fontSize: 40, color: '#FF9900' }} />,
     gradient: 'linear-gradient(135deg, #FF9900 0%, #FF6600 100%)',
   },
@@ -63,13 +71,13 @@ const skills = [
   },
   {
     category: 'DevOps',
-    items: [ 'Docker', 'Kubernetes', 'Terraform', 'CircleCI', 'GitHub Actions'],
+    items: ['Docker', 'Kubernetes', 'Terraform', 'CircleCI', 'GitHub Actions'],
     icon: <CloudIcon sx={{ fontSize: 40, color: '#EC4899' }} />,
     gradient: 'linear-gradient(135deg, #F43F5E 0%, #EC4899 100%)',
   },
   {
     category: 'Tools',
-    items: [ 'Microsoft Entra ID', 'OpenAI API', 'Sonarqube', 'GitHub', 'GitLab', 'Bitbucket', 'Jira', 'Confluence', 'Postman', 'Figma'],
+    items: ['Microsoft Entra ID', 'OpenAI API', 'Sonarqube', 'GitHub', 'GitLab', 'Bitbucket', 'Jira', 'Confluence', 'Postman', 'Figma'],
     icon: <BuildIcon sx={{ fontSize: 40, color: '#D97706' }} />,
     gradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
   },
