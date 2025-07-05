@@ -4,7 +4,7 @@
     "title": "Software Engineer",
     "subtitle": "HELLO, I'M",
     "description": "Crafting robust and scalable software solutions with precision and innovation.",
-    "profileImage": "/images/my-profile.jpg",
+    "profileImage": "./images/my-profile.jpg",
     "email": "hetvijoshi510@gmail.com",
     "phone": "(682)-405-4820",
     "location": "Arlington, Texas",
@@ -22,7 +22,7 @@
         "school": "University of Texas at Arlington",
         "location": "Arlington, Texas",
         "period": "08/2023 – 05/2025",
-        "gpa": "3.88/4.0",
+        "gpa": "3.75/4.0",
         "gradient": "linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)"
       },
       {
