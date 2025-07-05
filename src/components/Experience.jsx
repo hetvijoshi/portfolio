@@ -3,35 +3,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import WorkIcon from '@mui/icons-material/Work';
 import Link from '@mui/material/Link';
-
-const experiences = [
-  {
-    title: 'Research Volunteer - Explainable AI for Medical Diagnosis',
-    company: 'University of Texas at Arlington',
-    companyUrl: 'https://www.uta.edu/',
-    period: 'June 2025 – Present',
-    achievements: [
-      'Engineered XAI evaluation framework with 4 custom metrics (Relative Stability, Maximum Sensitivity, Infidelity, Complexity) on Wisconsin Breast Cancer dataset, establishing medical ML interpretability benchmarks.',
-      'Developed comparative analysis of XAI models (SHAP, LIME, EBM) with SVC classifier for Parkinson\'s disease prediction, optimizing explanation techniques for neurological disorder classification.',
-      'Implemented statistical validation protocols for heterogeneous medical datasets, enhancing feature reliability and prognostic model trustworthiness across healthcare applications.'
-    ],
-  },
-  {
-    title: 'Software Engineer',
-    company: 'Aubergine Solutions',
-    companyUrl: 'https://www.auberginesolutions.com/',
-    period: '12/2020 – 07/2023',
-    achievements: [
-      'Built microservices resume screening platform using event-driven architecture with AWS Lambda, SQS, DynamoDB; auto-scaling system that processes 150+ resumes daily with 93% accuracy, reducing infrastructure costs by 40%.',
-      'Created fault-tolerant API gateway with Express.js, implementing circuit breaker patterns, rate limiting, JWT authentication; handles 230K+ monthly requests with 99.8% uptime and zero breaches.',
-      'Led Redis caching optimization using distributed cache-aside pattern, reducing API response times by 63% (230ms to 85ms) for 10K+ daily users.',
-      'Integrated secure payment processing with PCI-compliant microservices and Stripe APIs, implementing idempotent transactions processing $50K+ daily revenue at 99.9% success rate.',
-      'Implemented enterprise security framework for Django with Apache hardening, OAuth 2.0, RBAC; achieved SOC 2 compliance, reduced security incidents by 30%.'
-    ],
-  },
-];
+import resumeData from '../data/resumeData.json';
 
 export default function Experience() {
+  const { experience } = resumeData;
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -82,7 +57,7 @@ export default function Experience() {
           Professional Experience
         </Typography>
 
-        {experiences.map((exp, index) => (
+        {experience.map((exp, index) => (
           <Box
             key={index}
             component={motion.div}

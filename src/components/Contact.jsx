@@ -13,8 +13,10 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import resumeData from '../data/resumeData.json';
 
 export default function Contact() {
+  const { personal } = resumeData;
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -55,7 +57,6 @@ export default function Contact() {
       }}
       id="contact"
     >
-      {/* Main content container */}
       <Container
         maxWidth="md"
         sx={{
@@ -120,7 +121,7 @@ export default function Contact() {
           >
             <EmailIcon sx={{ color: '#4C6FFF' }} />
             <Link
-              href="mailto:hetvijoshi510@gmail.com"
+              href={`mailto:${personal.email}`}
               sx={{
                 textDecoration: 'none',
                 color: '#4C6FFF',
@@ -130,7 +131,7 @@ export default function Contact() {
                 }
               }}
             >
-              hetvijoshi510@gmail.com
+              {personal.email}
             </Link>
           </Box>
 
@@ -151,7 +152,7 @@ export default function Contact() {
           >
             <PhoneIcon sx={{ color: '#4C6FFF' }} />
             <Link
-              href="tel:+16824054820"
+              href={`tel:${personal.phone}`}
               sx={{
                 textDecoration: 'none',
                 color: '#4C6FFF',
@@ -161,7 +162,7 @@ export default function Contact() {
                 }
               }}
             >
-              (682)-405-4820
+              {personal.phone}
             </Link>
           </Box>
 
@@ -180,14 +181,14 @@ export default function Contact() {
             }}
           >
             <Link
-              href="https://www.linkedin.com/in/hetvi-joshi"
+              href={personal.socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
             >
               <LinkedInIcon fontSize="large" />
             </Link>
             <Link
-              href="https://github.com/hetvijoshi"
+              href={personal.socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
             >

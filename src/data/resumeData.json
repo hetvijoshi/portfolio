@@ -1,0 +1,161 @@
+{
+  "personal": {
+    "name": "Hetvi Joshi",
+    "title": "Software Engineer",
+    "subtitle": "HELLO, I'M",
+    "description": "Crafting robust and scalable software solutions with precision and innovation.",
+    "profileImage": "/images/my-profile.jpg",
+    "email": "hetvijoshi510@gmail.com",
+    "phone": "(682)-405-4820",
+    "location": "Arlington, Texas",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/hetvi-joshi",
+      "github": "https://github.com/hetvijoshi",
+      "resume": "https://drive.google.com/file/d/1w7Q-Vms9Qmc9-YuNucPS-TwmaA3z4cCQ/view?usp=drive_link"
+    }
+  },
+  "about": {
+    "description": "I am a Master's student in Computer Science at the University of Texas at Arlington, with a strong foundation in software engineering, cloud computing, and web technologies. I bring over 2.5 years of hands-on industry experience in developing enterprise-level applications, implementing cloud solutions, and delivering scalable, secure software across various industries. My expertise spans full-stack development, cloud architecture, and modern development practices.",
+    "education": [
+      {
+        "degree": "Master of Science in Computer Science",
+        "school": "University of Texas at Arlington",
+        "location": "Arlington, Texas",
+        "period": "08/2023 – 05/2025",
+        "gpa": "3.88/4.0",
+        "gradient": "linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)"
+      },
+      {
+        "degree": "Bachelor of Technology in Computer Engineering",
+        "school": "Dharmsinh Desai University",
+        "location": "Gujarat, India",
+        "period": "07/2017 – 05/2021",
+        "gpa": "3.56/4.0",
+        "gradient": "linear-gradient(135deg, #4158D0 0%, #C850C0 100%)"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Programming Languages",
+        "items": ["Java", "Python", "JavaScript", "TypeScript", "C#", "SQL"],
+        "icon": "CodeIcon",
+        "gradient": "linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)"
+      },
+      {
+        "category": "Web and Mobile Technologies",
+        "items": ["Spring Boot", "Django", ".NET", "React", "Redux", "Next.js", "Angular", "React Native", "Node.js", "Strapi"],
+        "icon": "WebIcon",
+        "gradient": "linear-gradient(135deg, #10B981 0%, #059669 100%)"
+      },
+      {
+        "category": "ML/AI",
+        "items": ["EBM", "TensorFlow", "JAX", "Transformers", "Keras", "Scikit-learn", "Pandas", "NumPy"],
+        "icon": "PsychologyIcon",
+        "gradient": "linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)"
+      },
+      {
+        "category": "Databases and Search",
+        "items": ["MySQL", "MongoDB", "PostgreSQL", "Redis", "ElasticSearch", "MS SQL Server"],
+        "icon": "StorageIcon",
+        "gradient": "linear-gradient(135deg, #14B8A6 0%, #0EA5E9 100%)"
+      },
+      {
+        "category": "AWS",
+        "items": ["EBS", "Lambda", "API Gateway", "RDS", "S3", "EC2"],
+        "icon": "CloudIcon",
+        "gradient": "linear-gradient(135deg, #FF9900 0%, #FF6600 100%)"
+      },
+      {
+        "category": "Google Cloud",
+        "items": ["Compute Engine", "App Engine", "Pub/Sub", "Cloud Functions"],
+        "icon": "GoogleIcon",
+        "gradient": "linear-gradient(135deg, #4285F4 0%, #0D47A1 100%)"
+      },
+      {
+        "category": "DevOps",
+        "items": ["Docker", "Kubernetes", "Terraform", "CircleCI", "GitHub Actions"],
+        "icon": "CloudIcon",
+        "gradient": "linear-gradient(135deg, #F43F5E 0%, #EC4899 100%)"
+      },
+      {
+        "category": "Tools",
+        "items": ["Microsoft Entra ID", "OpenAI API", "Sonarqube", "GitHub", "GitLab", "Bitbucket", "Jira", "Confluence", "Postman", "Figma"],
+        "icon": "BuildIcon",
+        "gradient": "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "title": "Research Volunteer - Explainable AI for Medical Diagnosis",
+      "company": "University of Texas at Arlington",
+      "companyUrl": "https://www.uta.edu/",
+      "period": "June 2025 – Present",
+      "achievements": [
+        "Engineered XAI evaluation framework with 4 custom metrics (Relative Stability, Maximum Sensitivity, Infidelity, Complexity) on Wisconsin Breast Cancer dataset, establishing medical ML interpretability benchmarks.",
+        "Developed comparative analysis of XAI models (SHAP, LIME, EBM) with SVC classifier for Parkinson's disease prediction, optimizing explanation techniques for neurological disorder classification.",
+        "Implemented statistical validation protocols for heterogeneous medical datasets, enhancing feature reliability and prognostic model trustworthiness across healthcare applications."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Aubergine Solutions",
+      "companyUrl": "https://www.auberginesolutions.com/",
+      "period": "12/2020 – 07/2023",
+      "achievements": [
+        "Built microservices resume screening platform using event-driven architecture with AWS Lambda, SQS, DynamoDB; auto-scaling system that processes 150+ resumes daily with 93% accuracy, reducing infrastructure costs by 40%.",
+        "Created fault-tolerant API gateway with Express.js, implementing circuit breaker patterns, rate limiting, JWT authentication; handles 230K+ monthly requests with 99.8% uptime and zero breaches.",
+        "Led Redis caching optimization using distributed cache-aside pattern, reducing API response times by 63% (230ms to 85ms) for 10K+ daily users.",
+        "Integrated secure payment processing with PCI-compliant microservices and Stripe APIs, implementing idempotent transactions processing $50K+ daily revenue at 99.9% success rate.",
+        "Implemented enterprise security framework for Django with Apache hardening, OAuth 2.0, RBAC; achieved SOC 2 compliance, reduced security incidents by 30%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Automatic Essay Scoring",
+      "description": "📝 ML Pipeline with DeBERTa Transformer | 79% Accuracy | 75% Manual Grading Reduction",
+      "technologies": ["Python", "Keras", "TensorFlow", "JAX", "DeBERTa-v3", "Streamlit", "Flask", "Scikit-learn", "Pandas", "NumPy"],
+      "githubUrl": "https://github.com/hetvijoshi/automatic-essay-scoring",
+      "liveUrl": null,
+      "period": "Jan 2025 – May 2025",
+      "icon": "EditNote"
+    },
+    {
+      "title": "Academiverse",
+      "description": "🎓 Modern Learning Platform | AI-Powered Quiz Generation with OpenAI | 50% Efficiency Boost",
+      "technologies": ["Spring Boot", "Next.js", "AWS RDS", "AWS S3", "OpenAI API", "CircleCI", "Microsoft Entra ID"],
+      "githubUrl": "https://github.com/hetvijoshi/AcademiVerse",
+      "liveUrl": null,
+      "period": "08/2024 – 11/2024",
+      "icon": "School"
+    },
+    {
+      "title": "SpotCrime",
+      "description": "🚨 Real-time Crime Analytics | 40% Data Analysis Reduction | Interactive Heat Maps",
+      "technologies": ["Tableau Public", "Next.js", "Node.js", "AWS RDS", "Google App Engine"],
+      "githubUrl": "https://github.com/hetvijoshi/SpotCrime",
+      "liveUrl": null,
+      "period": "10/2024 – 10/2024",
+      "icon": "Assessment"
+    },
+    {
+      "title": "GeoCompensate",
+      "description": "📍 Smart Attendance & Payroll System | 35% Faster Processing | 25% False clock-ins Reduction",
+      "technologies": ["React Native", "Node.js", "MongoDB Atlas", "Google App Engine", "Geolocation"],
+      "githubUrl": "https://github.com/gadarajainik/GeoCompensate",
+      "liveUrl": null,
+      "period": "01/2024 – 03/2024",
+      "icon": "LocationOn"
+    },
+    {
+      "title": "Dutch N Settle",
+      "description": "💰 Seamless Bill Splitting | Smart Expense Tracking | 30% Enhanced User Security",
+      "technologies": ["React", "Node.js", "MongoDB Atlas", "Google OAuth", "Pub/Sub", "Google App Engine", "Secret Manager", "Cloud Functions", "GitHub Actions"],
+      "githubUrl": "https://github.com/gadarajainik/DutchNSettle",
+      "liveUrl": null,
+      "period": "08/2023 – 12/2023",
+      "icon": "CurrencyExchange"
+    }
+  ]
+}
