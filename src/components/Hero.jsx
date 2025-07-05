@@ -4,8 +4,11 @@ import Image from 'next/image';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DownloadIcon from '@mui/icons-material/Download';
+import resumeData from '../data/resumeData.json';
 
 export default function Hero() {
+  const { personal } = resumeData;
+
   return (
     <Box
       component={motion.div}
@@ -21,7 +24,6 @@ export default function Hero() {
         pt: { xs: 8, md: 0 }
       }}
     >
-      {/* Decorative background elements */}
       <Box
         sx={{
           position: 'absolute',
@@ -79,7 +81,7 @@ export default function Hero() {
                   letterSpacing: '0.1em',
                 }}
               >
-                HELLO, I&apos;M
+                {personal.subtitle}
               </Typography>
             </motion.div>
 
@@ -99,7 +101,7 @@ export default function Hero() {
                 letterSpacing: '0.02em',
               }}
             >
-              Hetvi Joshi
+              {personal.name}
             </Typography>
             
             <Typography
@@ -115,7 +117,7 @@ export default function Hero() {
                 color: 'text.secondary',
               }}
             >
-              Software Engineer
+              {personal.title}
             </Typography>
 
             <Typography
@@ -132,7 +134,7 @@ export default function Hero() {
                 lineHeight: 1.6,
               }}
             >
-              Crafting robust and scalable software solutions with precision and innovation.
+              {personal.description}
             </Typography>
 
             <Box
@@ -147,12 +149,10 @@ export default function Hero() {
                 alignItems: { xs: 'center', md: 'flex-start' },
               }}
             >
-              {/* Social Links */}
               <Box sx={{ display: 'flex', gap: 2 }}>
-                {/* For Mobile */}
                 <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 2 }}>
                   <Button
-                    href="https://linkedin.com/in/hetvi-joshi"
+                    href={personal.socialLinks.linkedin}
                     target="_blank"
                     startIcon={<LinkedInIcon />}
                     sx={{
@@ -172,7 +172,7 @@ export default function Hero() {
                   </Button>
 
                   <Button
-                    href="https://github.com/hetvijoshi"
+                    href={personal.socialLinks.github}
                     target="_blank"
                     startIcon={<GitHubIcon />}
                     sx={{
@@ -192,10 +192,9 @@ export default function Hero() {
                   </Button>
                 </Box>
 
-                {/* For Desktop */}
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
                   <Button
-                    href="https://linkedin.com/in/hetvi-joshi"
+                    href={personal.socialLinks.linkedin}
                     target="_blank"
                     startIcon={<LinkedInIcon />}
                     sx={{
@@ -215,7 +214,7 @@ export default function Hero() {
                   </Button>
 
                   <Button
-                    href="https://github.com/hetvijoshi"
+                    href={personal.socialLinks.github}
                     target="_blank"
                     startIcon={<GitHubIcon />}
                     sx={{
@@ -236,13 +235,12 @@ export default function Hero() {
                 </Box>
               </Box>
 
-              {/* Resume Download Button */}
               <Button
                 component={motion.a}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
-                href="https://drive.google.com/file/d/1w7Q-Vms9Qmc9-YuNucPS-TwmaA3z4cCQ/view?usp=drive_link"
+                href={personal.socialLinks.resume}
                 download
                 startIcon={<DownloadIcon className="download-icon" />}
                 sx={{
@@ -300,8 +298,8 @@ export default function Hero() {
               }}
             >
               <Image
-                src="/portfolio/images/my-profile.jpg"
-                alt="Hetvi Joshi"
+                src={personal.profileImage}
+                alt={personal.name}
                 fill
                 style={{ 
                   objectFit: 'cover',

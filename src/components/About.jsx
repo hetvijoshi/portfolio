@@ -12,78 +12,33 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import { aboutStyles } from './styles/AboutStyles';
+import resumeData from '../data/resumeData.json';
 
-const education = [
-  {
-    degree: 'Master of Science in Computer Science',
-    school: 'University of Texas at Arlington',
-    location: 'Arlington, Texas',
-    period: '08/2023 – 05/2025',
-    gradient: 'linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)',
-    gpa: '3.88/4.0'
-  },
-  {
-    degree: 'Bachelor of Technology in Computer Engineering',
-    school: 'Dharmsinh Desai University',
-    location: 'Gujarat, India',
-    period: '07/2017 – 05/2021',
-    gradient: 'linear-gradient(135deg, #4158D0 0%, #C850C0 100%)',
-    gpa: '3.56/4.0'
-  },
-];
-
-const skills = [
-  {
-    category: 'Programming Languages',
-    items: ['Java', 'Python', 'JavaScript', 'TypeScript', 'C#', 'SQL'],
-    icon: <CodeIcon sx={{ fontSize: 40, color: '#8B5CF6' }} />,
-    gradient: 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)',
-  },
-  {
-    category: 'Web and Mobile Technologies',
-    items: ['Spring Boot', 'Django', '.NET', 'React', 'Redux', 'Next.js', 'Angular', 'React Native', 'Node.js', 'Strapi'],
-    icon: <WebIcon sx={{ fontSize: 40, color: '#059669' }} />,
-    gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
-  },
-  {
-    category: 'ML/AI',
-    items: ['EBM', 'TensorFlow', 'JAX', 'Transformers', 'Keras', 'Scikit-learn', 'Pandas', 'NumPy'],
-    icon: <PsychologyIcon sx={{ fontSize: 40, color: '#0891B2' }} />,
-    gradient: 'linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)',
-  },
-  {
-    category: 'Databases and Search',
-    items: ['MySQL', 'MongoDB', 'PostgreSQL', 'Redis', 'ElasticSearch', 'MS SQL Server'],
-    icon: <StorageIcon sx={{ fontSize: 40, color: '#0EA5E9' }} />,
-    gradient: 'linear-gradient(135deg, #14B8A6 0%, #0EA5E9 100%)',
-  },
-  {
-    category: 'AWS',
-    items: ['EBS', 'Lambda', 'API Gateway', 'RDS', 'S3', 'EC2'],
-    icon: <CloudIcon sx={{ fontSize: 40, color: '#FF9900' }} />,
-    gradient: 'linear-gradient(135deg, #FF9900 0%, #FF6600 100%)',
-  },
-  {
-    category: 'Google Cloud',
-    items: ['Compute Engine', 'App Engine', 'Pub/Sub', 'Cloud Functions'],
-    icon: <GoogleIcon sx={{ fontSize: 40, color: '#4285F4' }} />,
-    gradient: 'linear-gradient(135deg, #4285F4 0%, #0D47A1 100%)',
-  },
-  {
-    category: 'DevOps',
-    items: ['Docker', 'Kubernetes', 'Terraform', 'CircleCI', 'GitHub Actions'],
-    icon: <CloudIcon sx={{ fontSize: 40, color: '#EC4899' }} />,
-    gradient: 'linear-gradient(135deg, #F43F5E 0%, #EC4899 100%)',
-  },
-  {
-    category: 'Tools',
-    items: ['Microsoft Entra ID', 'OpenAI API', 'Sonarqube', 'GitHub', 'GitLab', 'Bitbucket', 'Jira', 'Confluence', 'Postman', 'Figma'],
-    icon: <BuildIcon sx={{ fontSize: 40, color: '#D97706' }} />,
-    gradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-  },
-];
+const getIconComponent = (iconName, color) => {
+  const iconProps = { sx: { fontSize: 40, color } };
+  
+  switch (iconName) {
+    case 'CodeIcon':
+      return <CodeIcon {...iconProps} />;
+    case 'WebIcon':
+      return <WebIcon {...iconProps} />;
+    case 'PsychologyIcon':
+      return <PsychologyIcon {...iconProps} />;
+    case 'StorageIcon':
+      return <StorageIcon {...iconProps} />;
+    case 'CloudIcon':
+      return <CloudIcon {...iconProps} />;
+    case 'GoogleIcon':
+      return <GoogleIcon {...iconProps} />;
+    case 'BuildIcon':
+      return <BuildIcon {...iconProps} />;
+    default:
+      return <CodeIcon {...iconProps} />;
+  }
+};
 
 export default function About() {
+  const { about } = resumeData;
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -125,16 +80,21 @@ export default function About() {
           component={motion.p}
           sx={aboutStyles.description}
         >
-          I am a Master&apos;s student in Computer Science at the University of Texas at Arlington,
-          with a strong foundation in software engineering, cloud computing, and web technologies.
-          I bring <Box component="span" sx={{
-            backgroundColor: 'rgba(139, 92, 246, 0.15)',
-            padding: '2px 8px',
-            borderRadius: '4px',
-            fontWeight: 600,
-          }}>over 2.5 years of hands-on industry experience</Box> in developing enterprise-level applications,
-          implementing cloud solutions, and delivering scalable, secure software across various industries.
-          My expertise spans full-stack development, cloud architecture, and modern development practices.
+          {about.description.split('over 2.5 years of hands-on industry experience').map((part, index) => 
+            index === 0 ? (
+              <span key={index}>{part}</span>
+            ) : (
+              <span key={index}>
+                <Box component="span" sx={{
+                  backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                  padding: '2px 8px',
+                  borderRadius: '4px',
+                  fontWeight: 600,
+                }}>over 2.5 years of hands-on industry experience</Box>
+                {part}
+              </span>
+            )
+          )}
         </Typography>
 
         <Typography
@@ -145,7 +105,7 @@ export default function About() {
         </Typography>
 
         <Grid container spacing={3} sx={aboutStyles.educationGrid}>
-          {education.map((edu, index) => (
+          {about.education.map((edu, index) => (
             <Grid item xs={12} md={6} key={index}>
               <Paper
                 component={motion.div}
@@ -245,7 +205,11 @@ export default function About() {
         </Typography>
 
         <Grid container spacing={3}>
-          {skills.map((skill, index) => (
+          {about.skills.map((skill, index) => {
+            const gradientMatch = skill.gradient.match(/#([A-Fa-f0-9]{6})/);
+            const iconColor = gradientMatch ? `#${gradientMatch[1]}` : '#8B5CF6';
+            
+            return (
             <Grid item xs={12} md={6} lg={4} key={index}>
               <Paper
                 component={motion.div}
@@ -260,7 +224,7 @@ export default function About() {
                   }}
                 />
                 <Box sx={aboutStyles.skillIconContainer}>
-                  {skill.icon}
+                  {getIconComponent(skill.icon, iconColor)}
                 </Box>
                 <Typography variant="h6" sx={aboutStyles.skillTitle}>
                   {skill.category}
@@ -276,7 +240,8 @@ export default function About() {
                 </Box>
               </Paper>
             </Grid>
-          ))}
+            );
+          })}
         </Grid>
       </Container>
     </Box>

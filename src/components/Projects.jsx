@@ -6,51 +6,27 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import { School, LocationOn, CurrencyExchange, Assessment, EditNote } from '@mui/icons-material';
 import { styles } from './styles/ProjectStyles';
 import { useTheme } from '@mui/material/styles';
+import resumeData from '../data/resumeData.json';
 
-const projects = [
-  {
-    title: 'Automatic Essay Scoring',
-    description: '📝 ML Pipeline with DeBERTa Transformer | 79% Accuracy | 75% Manual Grading Reduction',
-    technologies: ['Python', 'Keras', 'TensorFlow', 'JAX', 'DeBERTa-v3', 'Streamlit', 'Flask', 'Scikit-learn', 'Pandas', 'NumPy'],
-    githubUrl: 'https://github.com/hetvijoshi/automatic-essay-scoring',
-    emoji: '🎯',
-    period: 'Jan 2025 – May 2025'
-  },
-  {
-    title: 'Academiverse',
-    description: '🎓 Modern Learning Platform | AI-Powered Quiz Generation with OpenAI | 50% Efficiency Boost',
-    technologies: ['Spring Boot', 'Next.js', 'AWS RDS', 'AWS S3', 'OpenAI API', 'CircleCI', 'Microsoft Entra ID'],
-    githubUrl: 'https://github.com/hetvijoshi/AcademiVerse',
-    emoji: '🤖',
-    period: '08/2024 – 11/2024'
-  },
-  {
-    title: 'SpotCrime',
-    description: '🚨 Real-time Crime Analytics | 40% Data Analysis Reduction | Interactive Heat Maps',
-    technologies: ['Tableau Public', 'Next.js', 'Node.js', 'AWS RDS', 'Google App Engine'],
-    githubUrl: 'https://github.com/hetvijoshi/SpotCrime',
-    emoji: '🗺️',
-    period: '10/2024 – 10/2024'
-  },
-  {
-    title: 'GeoCompensate',
-    description: '📍 Smart Attendance & Payroll System | 35% Faster Processing | 25% False clock-ins Reduction',
-    technologies: ['React Native', 'Node.js', 'MongoDB Atlas', 'Google App Engine', 'Geolocation'],
-    githubUrl: 'https://github.com/hetvijoshi/GeoCompensate',
-    emoji: '⏰',
-    period: '01/2024 – 03/2024'
-  },
-  {
-    title: 'Dutch N Settle',
-    description: '💰 Seamless Bill Splitting | Smart Expense Tracking | 30% Enhanced User Security',
-    technologies: ['React', 'Node.js', 'MongoDB Atlas', 'Google OAuth', 'Pub/Sub', 'Google App Engine', 'Secret Manager', 'Cloud Functions', 'GitHub Actions'],
-    githubUrl: 'https://github.com/hetvijoshi/DutchNSettle',
-    emoji: '💸',
-    period: '08/2023 – 12/2023'
-  },
-];
+const getProjectIcon = (iconName) => {
+  switch (iconName) {
+    case 'EditNote':
+      return EditNote;
+    case 'School':
+      return School;
+    case 'Assessment':
+      return Assessment;
+    case 'LocationOn':
+      return LocationOn;
+    case 'CurrencyExchange':
+      return CurrencyExchange;
+    default:
+      return School;
+  }
+};
 
 export default function Projects() {
+  const { projects } = resumeData;
   const theme = useTheme();
   const [ref, inView] = useInView({
     triggerOnce: true,
