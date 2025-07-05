@@ -121,7 +121,7 @@ I'm a **Master's student in Computer Science** at the University of Texas at Arl
       <h3 align="center">💰 Dutch N Settle</h3>
       <div align="center">
         <p>
-          <a href="https://github.com/gadarajainik/DutchNSettle" target="_blank">
+          <a href="https://github.com/hetvijoshi/DutchNSettle" target="_blank">
             <img src="https://img.shields.io/badge/CODE-blue?style=for-the-badge&logo=github&logoColor=white">
           </a>
         </p>
@@ -133,7 +133,7 @@ I'm a **Master's student in Computer Science** at the University of Texas at Arl
       <h3 align="center">📍 GeoCompensate</h3>
       <div align="center">
         <p>
-          <a href="https://github.com/gadarajainik/GeoCompensate" target="_blank">
+          <a href="https://github.com/hetvijoshi/GeoCompensate" target="_blank">
             <img src="https://img.shields.io/badge/CODE-blue?style=for-the-badge&logo=github&logoColor=white">
           </a>
         </p>
