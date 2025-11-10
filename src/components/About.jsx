@@ -80,7 +80,7 @@ export default function About() {
           component={motion.p}
           sx={aboutStyles.description}
         >
-          {about.description.split('over 2.5 years of hands-on industry experience').map((part, index) => 
+          {about.description.split('3 years of experience').map((part, index) => 
             index === 0 ? (
               <span key={index}>{part}</span>
             ) : (
@@ -89,8 +89,8 @@ export default function About() {
                   backgroundColor: 'rgba(139, 92, 246, 0.15)',
                   padding: '2px 8px',
                   borderRadius: '4px',
-                  fontWeight: 600,
-                }}>over 2.5 years of hands-on industry experience</Box>
+                  fontWeight: 700,
+                }}>{"3 years of experience"}</Box>
                 {part}
               </span>
             )

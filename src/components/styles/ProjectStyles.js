@@ -49,13 +49,15 @@ export const styles = {
   getGradient: (theme, projectTitle) => ({
     background: theme.palette.mode === 'dark'
       ? `linear-gradient(135deg, 
-          ${projectTitle === 'Automatic Essay Scoring' ? '#1a365d 0%, #2d3748 100%' :
+          ${projectTitle === 'Cloud-Native Application Platform' ? '#006064 0%, #00796b 100%' :
+          projectTitle === 'Automatic Essay Scoring' ? '#1a365d 0%, #2d3748 100%' :
           projectTitle === 'Academiverse' ? '#4a148c 0%, #311b92 100%' :
           projectTitle === 'SpotCrime' ? '#b71c1c 0%, #880e4f 100%' :
           projectTitle === 'GeoCompensate' ? '#1a237e 0%, #0d47a1 100%' :
           '#004d40 0%, #006064 100%'})`
       : `linear-gradient(135deg, 
-          ${projectTitle === 'Automatic Essay Scoring' ? '#63b3ed 0%, #90cdf4 100%' :
+          ${projectTitle === 'Cloud-Native Application Platform' ? '#80deea 0%, #80cbc4 100%' :
+          projectTitle === 'Automatic Essay Scoring' ? '#63b3ed 0%, #90cdf4 100%' :
           projectTitle === 'Academiverse' ? '#e1bee7 0%, #b39ddb 100%' :
           projectTitle === 'SpotCrime' ? '#ffcdd2 0%, #f8bbd0 100%' :
           projectTitle === 'GeoCompensate' ? '#c5cae9 0%, #bbdefb 100%' :
@@ -217,5 +219,33 @@ export const styles = {
     height: '60%',
     border: '2px solid rgba(255, 255, 255, 0.2)',
     borderRadius: '50%',
+  },
+  cloudAppIcon: {
+    fontSize: 80,
+    color: 'rgba(255, 255, 255, 0.9)',
+    zIndex: 2,
+    filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.3))',
+  },
+  cloudAppPattern: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    background: 'linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 100%)',
+    zIndex: 1,
+  },
+  cloudAppDecoration: {
+    position: 'absolute',
+    width: '70%',
+    height: '70%',
+    border: '2px solid rgba(255, 255, 255, 0.2)',
+    borderRadius: '16px',
+    zIndex: 1,
+  },
+  cloudAppGradient: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    background: 'radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%)',
+    zIndex: 0,
   },
 }; 

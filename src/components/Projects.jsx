@@ -3,27 +3,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
-import { School, LocationOn, CurrencyExchange, Assessment, EditNote } from '@mui/icons-material';
+import { School, LocationOn, CurrencyExchange, Assessment, EditNote, Cloud } from '@mui/icons-material';
 import { styles } from './styles/ProjectStyles';
 import { useTheme } from '@mui/material/styles';
 import resumeData from '../data/resumeData.json';
-
-const getProjectIcon = (iconName) => {
-  switch (iconName) {
-    case 'EditNote':
-      return EditNote;
-    case 'School':
-      return School;
-    case 'Assessment':
-      return Assessment;
-    case 'LocationOn':
-      return LocationOn;
-    case 'CurrencyExchange':
-      return CurrencyExchange;
-    default:
-      return School;
-  }
-};
 
 export default function Projects() {
   const { projects } = resumeData;
@@ -96,6 +79,11 @@ export default function Projects() {
                   ...styles.getGradient(theme, project.title)
                 }}>
                   <Box sx={styles.iconContainer}>
+                    {project.title === 'Cloud-Native Application Platform' && (
+                      <>
+                        <Cloud sx={styles.cloudAppIcon} />
+                      </>
+                    )}
                     {project.title === 'Automatic Essay Scoring' && (
                       <>
                         <EditNote sx={styles.essayScoringIcon} />

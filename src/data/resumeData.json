@@ -15,7 +15,7 @@
     }
   },
   "about": {
-    "description": "I am a Master's student in Computer Science at the University of Texas at Arlington, with a strong foundation in software engineering, cloud computing, and web technologies. I bring over 2.5 years of hands-on industry experience in developing enterprise-level applications, implementing cloud solutions, and delivering scalable, secure software across various industries. My expertise spans full-stack development, cloud architecture, and modern development practices.",
+    "description": "I’m a software engineer who thrives on designing systems that scale elegantly and think intelligently. With  3 years of experience and a Master’s in Computer Science from UT Arlington, I’ve built everything from fault-tolerant microservices and AI-driven agents to full-stack cloud platforms running on AWS and Kubernetes. I love solving hard problems at the intersection of distributed systems, automation, and applied AI, the kind that demand both precision and creativity.",
     "education": [
       {
         "degree": "Master of Science in Computer Science",
@@ -37,55 +37,133 @@
     "skills": [
       {
         "category": "Programming Languages",
-        "items": ["Java", "Python", "JavaScript", "TypeScript", "C#", "SQL"],
+        "items": [
+          "Java",
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "C#",
+          "SQL"
+        ],
         "icon": "CodeIcon",
         "gradient": "linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)"
       },
       {
         "category": "Web and Mobile Technologies",
-        "items": ["Spring Boot", "Django", ".NET", "React", "Redux", "Next.js", "Angular", "React Native", "Node.js", "Strapi"],
+        "items": [
+          "Spring Boot",
+          "Django",
+          ".NET",
+          "React",
+          "Redux",
+          "Next.js",
+          "Angular",
+          "React Native",
+          "Node.js",
+          "Strapi"
+        ],
         "icon": "WebIcon",
         "gradient": "linear-gradient(135deg, #10B981 0%, #059669 100%)"
       },
       {
         "category": "ML/AI",
-        "items": ["EBM", "TensorFlow", "JAX", "Transformers", "Keras", "Scikit-learn", "Pandas", "NumPy"],
+        "items": [
+          "Gemini API",
+          "Vapi AI",
+          "OpenAI API",
+          "EBM",
+          "TensorFlow",
+          "JAX",
+          "Transformers",
+          "Keras",
+          "Scikit-learn",
+          "Pandas",
+          "NumPy"
+        ],
         "icon": "PsychologyIcon",
         "gradient": "linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)"
       },
       {
         "category": "Databases and Search",
-        "items": ["MySQL", "MongoDB", "PostgreSQL", "Redis", "ElasticSearch", "MS SQL Server"],
+        "items": [
+          "MySQL",
+          "MongoDB",
+          "PostgreSQL",
+          "Redis",
+          "ElasticSearch",
+          "MS SQL Server"
+        ],
         "icon": "StorageIcon",
         "gradient": "linear-gradient(135deg, #14B8A6 0%, #0EA5E9 100%)"
       },
       {
         "category": "AWS",
-        "items": ["EBS", "Lambda", "API Gateway", "RDS", "S3", "EC2"],
+        "items": [
+          "EBS",
+          "Lambda",
+          "API Gateway",
+          "RDS",
+          "S3",
+          "EC2"
+        ],
         "icon": "CloudIcon",
         "gradient": "linear-gradient(135deg, #FF9900 0%, #FF6600 100%)"
       },
       {
         "category": "Google Cloud",
-        "items": ["Compute Engine", "App Engine", "Pub/Sub", "Cloud Functions"],
+        "items": [
+          "Compute Engine",
+          "App Engine",
+          "Pub/Sub",
+          "Cloud Functions"
+        ],
         "icon": "GoogleIcon",
         "gradient": "linear-gradient(135deg, #4285F4 0%, #0D47A1 100%)"
       },
       {
         "category": "DevOps",
-        "items": ["Docker", "Kubernetes", "Terraform", "CircleCI", "GitHub Actions"],
+        "items": [
+          "Docker",
+          "Kubernetes",
+          "Minikube",
+          "Terraform",
+          "Helm",
+          "ArgoCD",
+          "CircleCI",
+          "GitHub Actions",
+          "Datadog"
+        ],
         "icon": "CloudIcon",
         "gradient": "linear-gradient(135deg, #F43F5E 0%, #EC4899 100%)"
       },
       {
         "category": "Tools",
-        "items": ["Microsoft Entra ID", "OpenAI API", "Sonarqube", "GitHub", "GitLab", "Bitbucket", "Jira", "Confluence", "Postman", "Figma"],
+        "items": [
+          "Serper API",
+          "Microsoft Entra ID",
+          "GitHub",
+          "GitLab",
+          "Bitbucket",
+          "Jira",
+          "Postman"
+        ],
         "icon": "BuildIcon",
         "gradient": "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)"
       }
     ]
   },
   "experience": [
+    {
+      "title": "Mobile Development Engineer",
+      "company": "OkAgent",
+      "companyUrl": "https://www.getok.ai/",
+      "period": "September 2025 – Present",
+      "achievements": [
+        "Engineered voice-powered Profile Builder using Vapi AI SDK for conversational AI interviews; integrated webhook-based profile extraction pipeline achieving 89% parsing accuracy and 78% reduction in manual profile creation time.",
+        "Architected News Agent feature with RSS feed aggregation, Gemini API summarization, and Serper API image extraction; implemented database caching layer with 1-hour TTL, optimizing load performance by 80%.",
+        "Delivered Learn Agent POC integrating MUX video streaming with adaptive bitrate playback via react-native-video; implemented progressive loading and buffer optimization strategies, achieving 94% playback success rate for video content."
+      ]
+    },
     {
       "title": "Research Volunteer - Explainable AI for Medical Diagnosis",
       "company": "University of Texas at Arlington",
@@ -113,9 +191,39 @@
   ],
   "projects": [
     {
+      "title": "Cloud-Native Application Platform",
+      "description": "🚀 Cloud-Native CI/CD Platform | 15+ Daily Zero-Downtime Releases | 65% MTTR Improvement",
+      "technologies": [
+        "Spring Boot",
+        "Python",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "ArgoCD",
+        "Datadog",
+        "Minikube"
+      ],
+      "githubUrl": "https://github.com/hetvijoshi/",
+      "liveUrl": null,
+      "period": "June 2025 – July 2025",
+      "icon": "EditNote"
+    },
+    {
       "title": "Automatic Essay Scoring",
       "description": "📝 ML Pipeline with DeBERTa Transformer | 79% Accuracy | 75% Manual Grading Reduction",
-      "technologies": ["Python", "Keras", "TensorFlow", "JAX", "DeBERTa-v3", "Streamlit", "Flask", "Scikit-learn", "Pandas", "NumPy"],
+      "technologies": [
+        "Python",
+        "Keras",
+        "TensorFlow",
+        "JAX",
+        "DeBERTa-v3",
+        "Streamlit",
+        "Flask",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy"
+      ],
       "githubUrl": "https://github.com/hetvijoshi/automatic-essay-scoring",
       "liveUrl": null,
       "period": "Jan 2025 – May 2025",
@@ -124,7 +232,15 @@
     {
       "title": "Academiverse",
       "description": "🎓 Modern Learning Platform | AI-Powered Quiz Generation with OpenAI | 50% Efficiency Boost",
-      "technologies": ["Spring Boot", "Next.js", "AWS RDS", "AWS S3", "OpenAI API", "CircleCI", "Microsoft Entra ID"],
+      "technologies": [
+        "Spring Boot",
+        "Next.js",
+        "AWS RDS",
+        "AWS S3",
+        "OpenAI API",
+        "CircleCI",
+        "Microsoft Entra ID"
+      ],
       "githubUrl": "https://github.com/hetvijoshi/AcademiVerse",
       "liveUrl": null,
       "period": "08/2024 – 11/2024",
@@ -133,7 +249,13 @@
     {
       "title": "SpotCrime",
       "description": "🚨 Real-time Crime Analytics | 40% Data Analysis Reduction | Interactive Heat Maps",
-      "technologies": ["Tableau Public", "Next.js", "Node.js", "AWS RDS", "Google App Engine"],
+      "technologies": [
+        "Tableau Public",
+        "Next.js",
+        "Node.js",
+        "AWS RDS",
+        "Google App Engine"
+      ],
       "githubUrl": "https://github.com/hetvijoshi/SpotCrime",
       "liveUrl": null,
       "period": "10/2024 – 10/2024",
@@ -142,7 +264,13 @@
     {
       "title": "GeoCompensate",
       "description": "📍 Smart Attendance & Payroll System | 35% Faster Processing | 25% False clock-ins Reduction",
-      "technologies": ["React Native", "Node.js", "MongoDB Atlas", "Google App Engine", "Geolocation"],
+      "technologies": [
+        "React Native",
+        "Node.js",
+        "MongoDB Atlas",
+        "Google App Engine",
+        "Geolocation"
+      ],
       "githubUrl": "https://github.com/hetvijoshi/GeoCompensate",
       "liveUrl": null,
       "period": "01/2024 – 03/2024",
@@ -151,7 +279,17 @@
     {
       "title": "Dutch N Settle",
       "description": "💰 Seamless Bill Splitting | Smart Expense Tracking | 30% Enhanced User Security",
-      "technologies": ["React", "Node.js", "MongoDB Atlas", "Google OAuth", "Pub/Sub", "Google App Engine", "Secret Manager", "Cloud Functions", "GitHub Actions"],
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB Atlas",
+        "Google OAuth",
+        "Pub/Sub",
+        "Google App Engine",
+        "Secret Manager",
+        "Cloud Functions",
+        "GitHub Actions"
+      ],
       "githubUrl": "https://github.com/hetvijoshi/DutchNSettle",
       "liveUrl": null,
       "period": "08/2023 – 12/2023",
